@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	table.t1{
+		table-layout: automatic;
+	}
+	table.t2{
+		table-layout: fixed;
+	}
+	table.t3{
+		table-layout: auto;
+	}
+</style>
+</head>
+<body>
+	<table class="t1" border="1" width="100%">
+		<tr>
+			<td width="10%">abcdefghijklmnopqrstuvwxyz</td>
+			<td width="90%">abc</td>
+		</tr>
+	</table>	
+	 
+	<table class="t2" border="1" width="100%">
+		<tr>
+			<td width="50px">abcdefghijklmnopqrstuvwxyz</td>
+			<td>abc</td>
+		</tr>
+	</table>
+	
+	<table class="t3" border="1" width="100%">
+		<tr>
+			<td width="50px">中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国</td>
+			<td>中国中国中国中国</td>
+		</tr>
+		<tr>
+			<td width="50px">abcdefghijklmnopqrstuvwxyz</td>
+			<td>abc</td>
+		</tr>		
+	</table>
+</body>
+</html>
