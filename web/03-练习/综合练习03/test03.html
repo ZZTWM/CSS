@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+    <style>
+        .red{
+            color: red;
+            font-size: 12px;
+        }
+        .content{
+            border: lightskyblue 1px solid;
+            width: 600px;
+            height: 493px;
+        }
+        .title{
+            margin: 2px;
+            color: rgb(0,0,200);
+            background: lightskyblue;
+            font-size: 14px;
+        }
+        .tr .inline{
+            display: inline-block;
+        }
+        .center{
+            text-align: center;
+        }
+        .tr .gray{
+            background: lightgray;
+            padding-bottom: 10px;
+        }
+        .inline input{
+            width: 120px;
+        }
+        body{
+            font-size: 12px;
+        }
+        hr{
+            color: lightskyblue;
+        }
+    </style>
+    </head>
+    <body>
+        <div>
+            <p class="red">请注意：带有“*”的项目必须填写。</p>
+        </div>
+        <div class="content">
+            <div class="title">
+                <strong>请填写您的用户名：</strong>
+            </div>
+            <div class="tr">
+                <div class="inline center" style="width: 25%;margin-bottom: 10px;"><p class="red" style="display: inline-block;">*</p>通行证用户名：</div>
+                <div class="inline" style="margin-top: 10px;width: 25%;">
+                    <div>
+                        <input placeholder="请输入用户名" />
+                    </div>
+                    <div>
+                        <a href="#">查看用户名是否被占用</a>
+                    </div>
+                </div>
+                <div class="inline gray" style="width: 46%;">用户名由a~z的英文字母（不区分大小写）、
+                    0~9的数字、点、减号或下划线组成，长度为3~18个字符，只能以数字或者字母开头和结尾，例如：kzyz_001。</div>
+            </div>
+            <div class="title"><strong>请填写安全设置：</strong>（安全设置用于验证账号和找回密码）</div>
+            <p class="red">以下信息对保证您账号的安全极为重要，请您务必认真填写。</p>
+            <div class="tr">
+                <div class="inline center" style="width: 25%;">
+                    <div><span class="red">*</span>输入登录密码：</div>
+                    <div><span class="red">*</span>登录密码确认：</div>
+                </div>
+                <div class="inline center" style="width: 25%;"><input type="text" style="margin-bottom: 5px;" /><br /><input type="text" /></div>
+                <div class="inline gray"style="width: 46%;padding: 15px 0;">密码长度为6~16位，区分字母大小写，登陆密码可以由字母、数字、特殊字符组成【<a href="#">更多说明</a>】</div>
+            </div>
+            <hr />
+            <div class="tr">
+                <div class="inline center" style="width: 25%;">
+                    <div><span class="red">*</span>密码提示问题：</div>
+                    <div><span class="red">*</span>密码提示答案：</div>
+                </div>
+                <div class="inline center" style="width: 25%;"><input type="text" style="margin-bottom: 5px;" /><br /><input type="text" /></div>
+                <div class="inline gray"style="width: 46%;padding: 15px 0;">当您忘记密码时可以由此找回密码。例如，问题是“<strong>我的哥哥是谁？</strong>”，答案为“petter2”。问题长度<strong>不大于36</strong>个字符，一个汉字占两个字符。<strong>答案长度在6~30</strong>位之间，区分大小写。【<a href="#">更多说明</a>】</div>
+            </div>
+            <hr />
+            <div class="tr">
+                <div class="inline center" style="width: 25%;">
+                    <div><span class="red">*</span>输入安全码：</div>
+                    <div><span class="red">*</span>安全码确认：</div>
+                </div>
+                <div class="inline center" style="width: 25%;"><input type="text" style="margin-bottom: 5px;" /><br /><input type="text" /></div>
+                <div class="inline gray"style="width: 46%;padding: 15px 0;">安全码是您找回密码的<strong>重要</strong>途径，安全码长度为<strong>6~16</strong>位，区分字母大小写，由字母、数字、特殊字符组成，
+                    <span class="red">特别提醒：安全码一旦设定，将不可自行修改</span>【<a href="#">更多说明</a>】</div>
+            </div>
+            <hr />
+            <div class="center">
+                <input type="submit" value="提交表单" />
+            </div>
+        </div>
+    </body>
+</html>
